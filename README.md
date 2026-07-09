@@ -24,12 +24,10 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 
 ## Install
 
-Replace USERNAME with your GitHub username in the commands below.
-
 ### From GitHub (recommended, this is how others install it)
 
 ```
-/plugin marketplace add USERNAME/ml-engineer
+/plugin marketplace add mxslr/ml-engineer
 /plugin install ml-engineer@ml-engineer-marketplace
 ```
 
@@ -53,7 +51,7 @@ After installing, restart or reload Claude Code so the skills are picked up. Ver
 
 ## Publish to GitHub (for the maintainer)
 
-Run these from inside the plugin folder. Replace USERNAME with your GitHub username.
+Run these from inside the plugin folder.
 
 The gh CLI is the easiest path. If you do not have it, install it from https://cli.github.com then run:
 
@@ -72,7 +70,7 @@ git init
 git add .
 git commit -m "ml-engineer plugin"
 git branch -M main
-git remote add origin https://github.com/USERNAME/ml-engineer.git
+git remote add origin https://github.com/mxslr/ml-engineer.git
 git push -u origin main
 ```
 
