@@ -113,14 +113,6 @@ git remote add origin https://github.com/mxslr/ml-engineer.git
 git push -u origin main
 ```
 
-## Share and get it discovered
-
-- Add GitHub topics to the repository (Settings gear on the repo page). Suggested: `claude-code`, `claude-plugin`, `machine-learning`, `deep-learning`, `computer-vision`, `medical-imaging`, `nlp`, `llm`, `tabular`, `time-series`, `fine-tuning`, `research`.
-- Submit the plugin to the official Anthropic plugin marketplace and to community marketplaces or awesome-claude-code lists, usually by opening a pull request that adds your plugin entry. Check each list's contributing guide.
-- Cut a tagged release (for example v1.0.0) so the repo looks maintained.
-- Share a short demo with a real result in communities such as the Claude Developers Discord, r/ClaudeAI, r/MachineLearning, X, LinkedIn, and Hugging Face. Show an outcome, not just a feature list.
-- Keep it alive: respond to issues, add examples, and version updates. Active maintenance builds trust and adoption.
-
 ## Components
 
 | Type | Name | Purpose |
