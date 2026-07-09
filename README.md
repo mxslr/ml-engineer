@@ -24,7 +24,16 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 
 ## Install
 
-### From GitHub (recommended, this is how others install it)
+### From Claude Desktop or the web app 
+
+1. Open Settings.
+2. Go to Plugins.
+3. Click Add, then Add marketplace.
+4. Choose Add from a repository.
+5. Paste the GitHub repository: `mxslr/ml-engineer` (or the full URL `https://github.com/mxslr/ml-engineer`).
+6. After the marketplace is added, find ml-engineer in the plugin list and click Install.
+
+### From Claude Code (CLI)
 
 ```
 /plugin marketplace add mxslr/ml-engineer
@@ -33,7 +42,7 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 
 The first command registers the marketplace defined in this repository. The second installs the plugin named ml-engineer from the marketplace named ml-engineer-marketplace.
 
-### From a local folder (for developing the plugin on your own machine)
+### From a local folder 
 
 From the directory that contains the cloned repository:
 
@@ -49,7 +58,17 @@ After installing, restart or reload Claude Code so the skills are picked up. Ver
 - Automatic: describe your task in chat and the skills trigger themselves.
 - Explicit: run /ml-project followed by your task, dataset, and goal metric.
 
-## Publish to GitHub (for the maintainer)
+## Other harnesses
+
+### Antigravity
+
+Antigravity installs plugins straight from a Git repository:
+
+```
+agy plugin install https://github.com/mxslr/ml-engineer
+```
+
+## Publish to GitHub 
 
 Run these from inside the plugin folder.
 
