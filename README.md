@@ -58,6 +58,26 @@ After installing, restart or reload Claude Code so the skills are picked up. Ver
 - Automatic: describe your task in chat and the skills trigger themselves.
 - Explicit: run /ml-project followed by your task, dataset, and goal metric.
 
+## Examples
+
+### 1. Medical imaging, delivered as a Kaggle notebook
+
+You say: "I have a brain tumor MRI dataset. Classify tumor vs no tumor. I want a Kaggle notebook."
+
+The plugin will: research the realistic accuracy ceiling for this task, build a patient-level split with leakage checks, pick a suitable backbone such as EfficientNet or ConvNeXt with the right medical preprocessing, train honest baselines first, report sensitivity and specificity at a clinical threshold, add Grad-CAM overlays, and write a Kaggle notebook with short professional explanations, no em-dash, and no emoji.
+
+### 2. Object detection on a local GPU
+
+You say: "Detect vehicles and license plates in traffic images. I will run it on my own GPU."
+
+The plugin will: route to computer vision, recommend a detector such as YOLO or RT-DETR, split by scene so frames of the same scene do not leak across train and test, size resolution and batch to your local VRAM, evaluate with mAP at the right IoU, and package an inference function.
+
+### 3. Improve a model that is stuck
+
+You say: "My classifier is stuck at 68 percent. Make it better."
+
+The plugin will: run the accuracy-improvement loop. It re-audits for data leakage first, reads the learning curves to tell overfitting from underfitting, inspects saliency maps to check the model is looking at the signal and not an artifact, researches the specific gap, then proposes a ranked, principled combination of techniques with an honest ceiling rather than a magic promise.
+
 ## Other harnesses
 
 ### Antigravity
@@ -92,6 +112,14 @@ git branch -M main
 git remote add origin https://github.com/mxslr/ml-engineer.git
 git push -u origin main
 ```
+
+## Share and get it discovered
+
+- Add GitHub topics to the repository (Settings gear on the repo page). Suggested: `claude-code`, `claude-plugin`, `machine-learning`, `deep-learning`, `computer-vision`, `medical-imaging`, `nlp`, `llm`, `tabular`, `time-series`, `fine-tuning`, `research`.
+- Submit the plugin to the official Anthropic plugin marketplace and to community marketplaces or awesome-claude-code lists, usually by opening a pull request that adds your plugin entry. Check each list's contributing guide.
+- Cut a tagged release (for example v1.0.0) so the repo looks maintained.
+- Share a short demo with a real result in communities such as the Claude Developers Discord, r/ClaudeAI, r/MachineLearning, X, LinkedIn, and Hugging Face. Show an outcome, not just a feature list.
+- Keep it alive: respond to issues, add examples, and version updates. Active maintenance builds trust and adoption.
 
 ## Components
 
