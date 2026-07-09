@@ -1,6 +1,6 @@
 {
   "name": "mlcraft-marketplace",
-  "description": "Marketplace hosting the mlcraft plugin, a professional AI/ML research-engineering workflow for Claude Code.",
+  "description": "Marketplace hosting the mlcraft plugin, a professional AI/ML research-engineering workflow for AI coding assistants.",
   "owner": {
     "name": "Marshall Rasendria",
     "email": "marshallrasendria2103@gmail.com"

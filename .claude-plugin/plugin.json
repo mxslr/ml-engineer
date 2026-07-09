@@ -1,7 +1,7 @@
 {
   "name": "mlcraft",
   "version": "1.0.0",
-  "description": "Professional AI/ML research-engineer workflow: research papers first, pick the best method for each problem (CV, medical imaging, NLP/LLM, tabular, time-series), train and fine-tune rigorously, evaluate honestly with no data leakage and no inflated numbers, and iteratively push accuracy toward the realistic ceiling. Detects whether the user wants a Kaggle notebook, a Google Colab notebook, or a local-GPU run and adapts the output.",
+  "description": "Professional AI/ML research-engineer workflow: research papers first, pick the best method for each problem (computer vision, medical imaging, NLP/LLM, tabular, time-series, audio and speech, recommendation, generative, reinforcement learning, graph, multimodal, video, 3D, and anomaly detection), train and fine-tune rigorously, evaluate honestly with no data leakage and no inflated numbers, and iteratively push accuracy toward the realistic ceiling. Detects whether the user wants a Kaggle notebook, a Google Colab notebook, or a local-GPU run and adapts the output.",
   "author": {
     "name": "Marshall Rasendria",
     "email": "marshallrasendria2103@gmail.com"

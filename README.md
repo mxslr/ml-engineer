@@ -14,17 +14,17 @@
 <p><i>Reads the papers, picks the best method, and evaluates honestly with no data leakage and no inflated numbers.</i></p>
 
 <p><img alt="license" src="https://img.shields.io/badge/license-MIT-3da639">
-<img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-plugin-6E4AED">
+<img alt="harness" src="https://img.shields.io/badge/harness-Claude%20Code%20%2B%20Antigravity-6E4AED">
 <img alt="version" src="https://img.shields.io/badge/version-1.0.0-1f6feb">
-<img alt="skills" src="https://img.shields.io/badge/skills-13-fb8500">
-<img alt="domains" src="https://img.shields.io/badge/domains-5-009999">
+<img alt="skills" src="https://img.shields.io/badge/skills-22-fb8500">
+<img alt="domains" src="https://img.shields.io/badge/domains-14-009999">
 <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-2ea043"></p>
 
 <p><b><a href="#install">Install</a></b> &nbsp;|&nbsp; <b><a href="#examples">Examples</a></b> &nbsp;|&nbsp; <b><a href="#components">Skills</a></b> &nbsp;|&nbsp; <b><a href="#what-it-does-automatically">How it works</a></b></p>
 
 </div>
 
-An AI/ML engineering plugin that makes your AI coding assistant work like a senior AI/ML research engineer. It researches papers first, picks the best method for your problem, trains and fine-tunes rigorously, evaluates honestly with no data leakage and no inflated numbers, and iteratively pushes accuracy toward the realistic ceiling. It works across Computer Vision, Medical Imaging, NLP and LLM, Tabular, and Time-Series.
+An AI/ML engineering plugin that makes your AI coding assistant work like a senior AI/ML research engineer. It researches papers first, picks the best method for your problem, trains and fine-tunes rigorously, evaluates honestly with no data leakage and no inflated numbers, and iteratively pushes accuracy toward the realistic ceiling. It works across computer vision, medical imaging, NLP and LLM, tabular, time-series, audio and speech, recommendation, generative models, reinforcement learning, graph, multimodal, video, 3D, and anomaly detection.
 
 ## What it does automatically
 
@@ -35,6 +35,11 @@ When you describe an ML task, the assistant auto-invokes the right skills:
 - "predict churn, fraud, or price from this CSV" goes to domain-tabular
 - "forecast demand or sales" goes to domain-time-series
 - "classify text, build a RAG chatbot, or fine-tune an LLM" goes to domain-nlp-llm
+- "build a recommendation system" goes to domain-recommender
+- "speech to text or audio classification" goes to domain-audio-speech
+- "generate or edit images with diffusion" goes to domain-generative
+- "recognize actions in video" goes to domain-video
+- "detect anomalies or defects" goes to domain-anomaly-detection
 - "accuracy is still too low, improve it" goes to accuracy-improvement-loop
 
 The orchestrator skill (ml-research-methodology) runs the full pipeline: framing, literature review, data-leakage audit, method selection, honest baselines, training, rigorous evaluation, and deployment with explainability.
@@ -153,13 +158,22 @@ git push -u origin main
 | skill | data-rigor-and-leakage | Correct splits and leakage hunt |
 | skill | training-optimization | Fine-tuning recipe, anti-overfit, GPU budget |
 | skill | rigorous-evaluation | Right metrics, calibration, thresholds chosen on validation |
-| skill | deployment-explainability | Inference parity, Grad-CAM, guardrails |
+| skill | deployment-explainability | Inference parity, per-problem explainability, guardrails |
 | skill | accuracy-improvement-loop | Diagnose, research the gap, combine techniques |
 | skill | domain-computer-vision | CV model selection |
 | skill | domain-medical-imaging | Medical rigor and model selection |
 | skill | domain-nlp-llm | NLP, LLM, and RAG method selection |
 | skill | domain-tabular | Tabular model selection |
 | skill | domain-time-series | Forecasting, classification, anomaly detection |
+| skill | domain-audio-speech | ASR, audio classification, speaker, keyword spotting |
+| skill | domain-recommender | Retrieve-then-rank, sequential, temporal splits |
+| skill | domain-generative | Diffusion vs GAN, LoRA/DreamBooth, FID/CLIP eval |
+| skill | domain-reinforcement-learning | PPO/SAC/DQN, offline RL, multi-seed eval |
+| skill | domain-graph | GNNs, transductive vs inductive splits, GNNExplainer |
+| skill | domain-multimodal | CLIP/BLIP-2/LLaVA, retrieval, VQA, captioning |
+| skill | domain-video | VideoMAE/Video Swin, video-level split, mAP/accuracy |
+| skill | domain-3d | Point Transformer v3, sparse conv, mIoU/mAP, scene split |
+| skill | domain-anomaly-detection | PatchCore/EfficientAD, one-class, PR-AUC, honest metrics |
 
 ## Design principle
 

@@ -32,10 +32,21 @@ Pick the approach grounded in Phase 1 + the actual dataset, not hype. Route by t
 | image classify / detect / segment / faces / vehicles / objects / OCR / pose | `domain-computer-vision` |
 | medical scan: tumor, cancer, MRI, CT, X-ray, mammogram, histopathology, retina | `domain-medical-imaging` |
 | text, sentiment, NER, QA, summarization, chatbot, RAG, embeddings, fine-tune LLM | `domain-nlp-llm` |
-| structured/CSV: churn, fraud, price, risk, ranking, recommendation features | `domain-tabular` |
+| structured/CSV: churn, fraud, price, risk, credit scoring | `domain-tabular` |
 | forecasting, sensor/finance/demand over time, anomaly-in-time | `domain-time-series` |
+| audio, speech to text, ASR, sound classification, speaker, keyword spotting | `domain-audio-speech` |
+| recommendation, ranking, collaborative filtering, next-item, personalization | `domain-recommender` |
+| generate images, text-to-image, diffusion, GAN, image editing, super-resolution | `domain-generative` |
+| reinforcement learning, control, robotics, policy, reward, bandits | `domain-reinforcement-learning` |
+| graph, GNN, node classification, link prediction, molecules, networks | `domain-graph` |
+| vision-language, CLIP, VQA, image captioning, multimodal, zero-shot image | `domain-multimodal` |
+| video, action recognition, activity, temporal action detection | `domain-video` |
+| 3D, point cloud, LiDAR, mesh, depth, 3D detection or segmentation | `domain-3d` |
+| anomaly, outlier, defect, novelty, intrusion, predictive maintenance | `domain-anomaly-detection` |
 
 Each domain skill has a **decision table** (sub-task to best architecture + honest caveats).
+
+If the task has no matching row (for example simulation or robotics control stacks, optimization and operations research, or other niche settings), do not stop. Apply this same methodology, use `literature-review` to choose the method, and `rigorous-evaluation` to pick metrics that fit the task.
 
 ## Phase 4 - Honest baselines first
 Train simple, strong baselines with **identical configs** before any fancy/fusion/ensemble model. You cannot claim an improvement without a fair baseline.
