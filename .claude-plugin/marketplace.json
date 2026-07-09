@@ -1,0 +1,20 @@
+{
+  "name": "ml-engineer-marketplace",
+  "description": "Marketplace hosting the ml-engineer plugin, a professional AI/ML research-engineering workflow for Claude Code.",
+  "owner": {
+    "name": "Marshall Rasendria",
+    "email": "marshallrasendria2103@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "ml-engineer",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "Research-first AI/ML engineering: literature review, best-method selection per domain, rigorous training and fine-tuning, honest leakage-free evaluation, explainable deployment, and an iterative accuracy-improvement loop.",
+      "author": {
+        "name": "Marshall Rasendria",
+        "email": "marshallrasendria2103@gmail.com"
+      }
+    }
+  ]
+}
