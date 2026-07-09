@@ -5,6 +5,7 @@
 Initial release.
 
 - Orchestrator methodology with automatic routing across 14 domains (computer vision, medical imaging, NLP and LLM, tabular, time-series, audio and speech, recommendation, generative, reinforcement learning, graph, multimodal, video, 3D, anomaly detection), plus a fallback for others.
+- Dataset profiling as the first step, for local datasets and Kaggle datasets (via a profiling cell or the Kaggle API).
 - Research-first literature review and a read-only paper-researcher agent.
 - Data-leakage audit with group, patient, and temporal splits.
 - Training and fine-tuning recipe, plus an accuracy-improvement loop.

@@ -19,8 +19,8 @@ Invoke **`literature-review`** (and the `paper-researcher` agent). Establish:
 - SOTA methods for this exact task + dataset, and the **realistic, leakage-free ceiling**.
 - Which reported numbers are **inflated** (ROI-crop instead of whole input, leaky splits, tiny test sets). Never promise to beat inflated claims.
 
-## Phase 2 - Data rigor & leakage audit
-Invoke **`data-rigor-and-leakage`** BEFORE training. Wrong splits invalidate everything.
+## Phase 2 - Understand the data, then audit leakage
+First invoke **`dataset-profiling`** to inspect the ACTUAL data (read local files, or emit a Kaggle profiling cell to run and paste back). Then invoke **`data-rigor-and-leakage`** BEFORE training. Wrong splits invalidate everything.
 - Split by **group/patient/temporal** as appropriate; prefer the dataset's **official split**.
 - Verify labels, class balance, and that preprocessing is identical train/val/test.
 

@@ -16,7 +16,7 @@
 <p><img alt="license" src="https://img.shields.io/badge/license-MIT-3da639">
 <img alt="harness" src="https://img.shields.io/badge/harness-Claude%20Code%20%2B%20Antigravity-6E4AED">
 <img alt="version" src="https://img.shields.io/badge/version-1.0.0-1f6feb">
-<img alt="skills" src="https://img.shields.io/badge/skills-22-fb8500">
+<img alt="skills" src="https://img.shields.io/badge/skills-23-fb8500">
 <img alt="domains" src="https://img.shields.io/badge/domains-14-009999">
 <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-2ea043"></p>
 
@@ -153,6 +153,7 @@ git push -u origin main
 | command | /ml-project | Entry point for the full workflow |
 | agent | paper-researcher | Read-only literature brief: SOTA, realistic ceiling, leakage traps |
 | skill | ml-research-methodology | Orchestrator and routing table |
+| skill | dataset-profiling | Inspect local or Kaggle data before modeling |
 | skill | notebook-delivery | Detect Kaggle vs Colab vs local GPU, enforce notebook style |
 | skill | literature-review | Find and critically appraise papers |
 | skill | data-rigor-and-leakage | Correct splits and leakage hunt |
