@@ -31,7 +31,7 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 /plugin install ml-engineer@ml-engineer-marketplace
 ```
 
-The first command registers the marketplace defined in this repository. The second installs the plugin named ml-engineer from the marketplace named ml-engineer-marketplace. This is the same pattern as other public plugins, for example `/plugin install superpowers@superpowers-marketplace`.
+The first command registers the marketplace defined in this repository. The second installs the plugin named ml-engineer from the marketplace named ml-engineer-marketplace.
 
 ### From a local folder (for developing the plugin on your own machine)
 
