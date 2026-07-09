@@ -24,21 +24,24 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 
 ## Install
 
-### Option A: from a GitHub repository (recommended for sharing)
+Replace USERNAME with your GitHub username in the commands below.
 
-1. Push this folder to a GitHub repository named ml-engineer (see the Publish to GitHub section below).
-2. In Claude Code, add the repository as a marketplace and install:
-
-```
-/plugin marketplace add <your-github-username>/ml-engineer
-/plugin install ml-engineer
-```
-
-### Option B: from a local folder
+### From GitHub (recommended, this is how others install it)
 
 ```
-/plugin marketplace add C:/KP_HUMIC/ml-engineer
-/plugin install ml-engineer
+/plugin marketplace add USERNAME/ml-engineer
+/plugin install ml-engineer@ml-engineer-marketplace
+```
+
+The first command registers the marketplace defined in this repository. The second installs the plugin named ml-engineer from the marketplace named ml-engineer-marketplace. This is the same pattern as other public plugins, for example `/plugin install superpowers@superpowers-marketplace`.
+
+### From a local folder (for developing the plugin on your own machine)
+
+From the directory that contains the cloned repository:
+
+```
+/plugin marketplace add ./ml-engineer
+/plugin install ml-engineer@ml-engineer-marketplace
 ```
 
 After installing, restart or reload Claude Code so the skills are picked up. Verify with /plugin and confirm the plugin appears as enabled.
@@ -48,12 +51,14 @@ After installing, restart or reload Claude Code so the skills are picked up. Ver
 - Automatic: describe your task in chat and the skills trigger themselves.
 - Explicit: run /ml-project followed by your task, dataset, and goal metric.
 
-## Publish to GitHub
+## Publish to GitHub (for the maintainer)
+
+Run these from inside the plugin folder. Replace USERNAME with your GitHub username.
 
 The gh CLI is the easiest path. If you do not have it, install it from https://cli.github.com then run:
 
 ```
-cd C:/KP_HUMIC/ml-engineer
+git init
 git add .
 git commit -m "ml-engineer plugin"
 gh auth login
@@ -63,11 +68,11 @@ gh repo create ml-engineer --public --source=. --remote=origin --push
 Without gh, create an empty repository named ml-engineer on github.com first, then run:
 
 ```
-cd C:/KP_HUMIC/ml-engineer
+git init
 git add .
 git commit -m "ml-engineer plugin"
 git branch -M main
-git remote add origin https://github.com/<your-username>/ml-engineer.git
+git remote add origin https://github.com/USERNAME/ml-engineer.git
 git push -u origin main
 ```
 
