@@ -1,15 +1,15 @@
 <div align="center">
 
 <pre>
-███╗   ███╗██╗         ███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗███████╗██████╗ 
-████╗ ████║██║         ██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝██╔════╝██╔══██╗
-██╔████╔██║██║         █████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗  █████╗  ██████╔╝
-██║╚██╔╝██║██║         ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝  ██╔══╝  ██╔══██╗
-██║ ╚═╝ ██║███████╗    ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗███████╗██║  ██║
-╚═╝     ╚═╝╚══════╝    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝
+███╗   ███╗██╗      ██████╗██████╗  █████╗ ███████╗████████╗
+████╗ ████║██║     ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝
+██╔████╔██║██║     ██║     ██████╔╝███████║█████╗     ██║   
+██║╚██╔╝██║██║     ██║     ██╔══██╗██╔══██║██╔══╝     ██║   
+██║ ╚═╝ ██║███████╗╚██████╗██║  ██║██║  ██║██║        ██║   
+╚═╝     ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝        ╚═╝   
 </pre>
 
-<h3>Research-first AI/ML engineering for Claude Code</h3>
+<h3>Research-first AI/ML engineering for your AI coding assistant</h3>
 
 <p><i>Reads the papers, picks the best method, and evaluates honestly with no data leakage and no inflated numbers.</i></p>
 
@@ -24,11 +24,11 @@
 
 </div>
 
-A Claude Code plugin that makes Claude work like a senior AI/ML engineer and researcher. It researches papers first, picks the best method for your problem, trains and fine-tunes rigorously, evaluates honestly with no data leakage and no inflated numbers, and iteratively pushes accuracy toward the realistic ceiling. It works across Computer Vision, Medical Imaging, NLP and LLM, Tabular, and Time-Series.
+An AI/ML engineering plugin that makes your AI coding assistant work like a senior AI/ML research engineer. It researches papers first, picks the best method for your problem, trains and fine-tunes rigorously, evaluates honestly with no data leakage and no inflated numbers, and iteratively pushes accuracy toward the realistic ceiling. It works across Computer Vision, Medical Imaging, NLP and LLM, Tabular, and Time-Series.
 
 ## What it does automatically
 
-When you describe an ML task, Claude auto-invokes the right skills:
+When you describe an ML task, the assistant auto-invokes the right skills:
 
 - "detect vehicles, faces, or objects in images" goes to domain-computer-vision
 - "classify brain tumor MRI or benign vs malignant mammogram" goes to domain-medical-imaging
@@ -43,7 +43,7 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 
 ## Requirements
 
-- Claude Code (CLI, desktop, or IDE extension).
+- A supported agent harness: Claude Code or Antigravity today. Codex, Cursor, and more coming soon.
 - Git, to clone or add the plugin from a repository.
 
 ## Install
@@ -54,25 +54,25 @@ It also detects whether you want a Kaggle notebook, a Google Colab notebook, or 
 2. Go to Plugins.
 3. Click Add, then Add marketplace.
 4. Choose Add from a repository.
-5. Paste the GitHub repository: `mxslr/ml-engineer` (or the full URL `https://github.com/mxslr/ml-engineer`).
-6. After the marketplace is added, find ml-engineer in the plugin list and click Install.
+5. Paste the GitHub repository: `mxslr/mlcraft` (or the full URL `https://github.com/mxslr/mlcraft`).
+6. After the marketplace is added, find mlcraft in the plugin list and click Install.
 
 ### From Claude Code (CLI)
 
 ```
-/plugin marketplace add mxslr/ml-engineer
-/plugin install ml-engineer@ml-engineer-marketplace
+/plugin marketplace add mxslr/mlcraft
+/plugin install mlcraft@mlcraft-marketplace
 ```
 
-The first command registers the marketplace defined in this repository. The second installs the plugin named ml-engineer from the marketplace named ml-engineer-marketplace.
+The first command registers the marketplace defined in this repository. The second installs the plugin named mlcraft from the marketplace named mlcraft-marketplace.
 
 ### From a local folder 
 
 From the directory that contains the cloned repository:
 
 ```
-/plugin marketplace add ./ml-engineer
-/plugin install ml-engineer@ml-engineer-marketplace
+/plugin marketplace add ./mlcraft
+/plugin install mlcraft@mlcraft-marketplace
 ```
 
 After installing, restart or reload Claude Code so the skills are picked up. Verify with /plugin and confirm the plugin appears as enabled.
@@ -109,8 +109,12 @@ The plugin will: run the accuracy-improvement loop. It re-audits for data leakag
 Antigravity installs plugins straight from a Git repository:
 
 ```
-agy plugin install https://github.com/mxslr/ml-engineer
+agy plugin install https://github.com/mxslr/mlcraft
 ```
+
+### Codex, Cursor, and more
+
+Coming soon. The skills are portable Markdown, so bringing the plugin to other agent harnesses is on the roadmap.
 
 ## Publish to GitHub 
 
@@ -121,19 +125,19 @@ The gh CLI is the easiest path. If you do not have it, install it from https://c
 ```
 git init
 git add .
-git commit -m "ml-engineer plugin"
+git commit -m "mlcraft plugin"
 gh auth login
-gh repo create ml-engineer --public --source=. --remote=origin --push
+gh repo create mlcraft --public --source=. --remote=origin --push
 ```
 
-Without gh, create an empty repository named ml-engineer on github.com first, then run:
+Without gh, create an empty repository named mlcraft on github.com first, then run:
 
 ```
 git init
 git add .
-git commit -m "ml-engineer plugin"
+git commit -m "mlcraft plugin"
 git branch -M main
-git remote add origin https://github.com/mxslr/ml-engineer.git
+git remote add origin https://github.com/mxslr/mlcraft.git
 git push -u origin main
 ```
 
