@@ -1,4 +1,28 @@
-# ml-engineer
+<div align="center">
+
+<pre>
+███╗   ███╗██╗         ███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗███████╗██████╗ 
+████╗ ████║██║         ██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝██╔════╝██╔══██╗
+██╔████╔██║██║         █████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗  █████╗  ██████╔╝
+██║╚██╔╝██║██║         ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝  ██╔══╝  ██╔══██╗
+██║ ╚═╝ ██║███████╗    ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗███████╗██║  ██║
+╚═╝     ╚═╝╚══════╝    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝
+</pre>
+
+<h3>Research-first AI/ML engineering for Claude Code</h3>
+
+<p><i>Reads the papers, picks the best method, and evaluates honestly with no data leakage and no inflated numbers.</i></p>
+
+<p><img alt="license" src="https://img.shields.io/badge/license-MIT-3da639">
+<img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-plugin-6E4AED">
+<img alt="version" src="https://img.shields.io/badge/version-1.0.0-1f6feb">
+<img alt="skills" src="https://img.shields.io/badge/skills-13-fb8500">
+<img alt="domains" src="https://img.shields.io/badge/domains-5-009999">
+<img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-2ea043"></p>
+
+<p><b><a href="#install">Install</a></b> &nbsp;|&nbsp; <b><a href="#examples">Examples</a></b> &nbsp;|&nbsp; <b><a href="#components">Skills</a></b> &nbsp;|&nbsp; <b><a href="#what-it-does-automatically">How it works</a></b></p>
+
+</div>
 
 A Claude Code plugin that makes Claude work like a senior AI/ML engineer and researcher. It researches papers first, picks the best method for your problem, trains and fine-tunes rigorously, evaluates honestly with no data leakage and no inflated numbers, and iteratively pushes accuracy toward the realistic ceiling. It works across Computer Vision, Medical Imaging, NLP and LLM, Tabular, and Time-Series.
 
